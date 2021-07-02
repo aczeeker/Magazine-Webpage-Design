@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<!--
+	@ZeekEr - Arthur Choi 200469870
+-->
+<html>
+
+<head>
+    <title>AZ Times - Home Pages</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+    <!-- Header -->
+    <header id="header">
+        <a class="logo" href="index.html">AZ TIMES</a>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner">
+        <div class="inner">
+            <h1 id="Home_title"></h1>
+            <script>
+                document.getElementById("Home_title").innerHTML = Date();
+            </script>
+        </div>
+        <video autoplay loop muted playsinline src="images/banner.mp4"></video>
+    </section>
+
+    <section>
+        <div class="Post1x1">
+            <section>
+                <header class="content">
+                    <h2>Weather Today - London</h2>
+                    <!-- weather widget start -->
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/51d51n0d13/london/" data-label_1="LONDON" data-label_2="WEATHER" data-font="Times New Roman" data-icons="Climacons Animated" data-theme="pure">LONDON WEATHER</a>
+                    <script>
+                        ! function(d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = 'https://weatherwidget.io/js/widget.min.js';
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, 'script', 'weatherwidget-io-js');
+                    </script>
+                </header>
+            </section>
+        </div>
+    </section>
+
+    <!-- isolateline -->
+    <section id="isolateline" class="wrapper">
+        <div class="inner">
+            <h2>Disclaimer</h2>
+            <p>DATA from forecast7.com <br> Weather are used only for reference only. AZ Times do not hold any responsibility to the information accuracy.</p>
+        </div>
+    </section>
+    <!-- Post1x2 -->
+    <section class="wrapper">
+        <div class="inner" id="news">
+            <div class="Post1x2">
+                <section>
+                    <div class="content">
+                        <header>
+                            <a href="#post" class="image" id="news1_icon" onclick="news1function()"></a>
+                        </header>
+                        <p id="news1_title"></p>
+                        <p id="news1_published"></p>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <header>
+                            <a href="#post" class="image" id="news2_icon" onclick="news2function()"></a>
+                        </header>
+                        <p id="news2_title"></p>
+                        <p id="news2_published"></p>
+                    </div>
+                </section>
+                <section>
+
+                    <div class="content">
+                        <header>
+                            <a href="#post" class="image" id="news3_icon" onclick="news3function()"></a>
+                        </header>
+                        <p id="news3_title"></p>
+                        <p id="news3_published"></p>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <header>
+                            <a href="#post" class="image" id="news4_icon" onclick="news4function()"></a>
+                        </header>
+                        <p id="news4_title"></p>
+                        <p id="news4_published"></p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- isolateline -->
+    <section id="isolateline" class="wrapper">
+        <div class="inner">
+            <h2>Article Summary Below</h2>
+            <p>Click on More Details to explorer or Back to the top for another Article.</p>
+        </div>
+    </section>
+
+    <!-- POST -->
+    <section class="wrapper">
+        <div class="inner">
+            <div class="Post1x1">
+                <div class="content" id="post">
+                    <header>
+                        <div class="title">
+                            <p id="Focus_title"></p>
+                            <time id="Focus_published"></time>
+                        </div>
+                    </header>
+                    <p id="Focus_ScreenShot"></p>
+                    <h4>
+                        <p id="Focus_Summary"></p>
+                    </h4>
+                    <footer>
+                        <ul class="actions">
+                            <li><a href="#" class="button" id="Focus_Btn">More Details</a></li>
+                            <li><a href="#news" class="button" id="Focus_Btn">Back to Top</a></li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <div class="content">
+                <section>
+                    <h3>Final Project for #200469870</h3>
+                    <p>This is the final project for Arthur working on course CM 1040</p>
+                </section>
+                <section>
+                    <h4>Others</h4>
+                    <ul class="alt">
+
+                        <li><a href="report.html">Report</a></li>
+                        <li><a href="report.html#Appendices">WireFrames</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <!--GoogleTranslator_Element start -->
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({
+                                pageLanguage: 'en'
+                            }, 'google_translate_element');
+                        }
+                    </script>
+                    <div id="google_translate_element"></div>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                    <p></p>
+                    <audio controls>
+                    <source src="download/Nameless Story.mp3" type="audio/mpeg">
+                </audio>
+                </section>
+            </div>
+            <div class="copyright">
+                @ZeekEr &copy; #200469870 Final Project 2021.
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js "></script>
+    <script src="assets/js/breakpoints.min.js "></script>
+    <script src="assets/js/util.js "></script>
+    <script src="assets/js/main.js "></script>
+    <script src="assets/js/index_getexternalobject.js"></script>
+
+</body>
+
+</html>
